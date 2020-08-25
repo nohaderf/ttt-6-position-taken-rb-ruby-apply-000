@@ -9,3 +9,5 @@ def position_taken?(board, index)
 end
 
 # Struggled to return true if the board has a value of "X" or "O in the index"
+# Realized it was improper to write:
+# 
