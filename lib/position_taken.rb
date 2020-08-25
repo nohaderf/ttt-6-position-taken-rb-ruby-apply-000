@@ -1,7 +1,7 @@
 # code your #position_taken? method here!
 
 def position_taken?(board, index)
-  if board[index] == "" || board[index] == " "
+  if board[index] == "" || board[index] == " " || board[index] == nil
     false
   else
     true
@@ -10,4 +10,6 @@ end
 
 # Struggled to return true if the board has a value of "X" or "O in the index"
 # Realized it was improper to write:
-# 
+#   if board[index] == "" || == " "
+# Test still failed though with the failure to return false if the board has nil in the index
+# Adding nil to the if statement passed the test
